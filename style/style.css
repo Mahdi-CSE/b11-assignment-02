@@ -5,14 +5,10 @@
   padding: 0px;
   font-size: 16px;
 }
-body {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header {
-  width: 100vw;
+header,
+main,
+footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +28,7 @@ header {
 /* Navbar starts here */
 
 #nav-section {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,35 +78,106 @@ header {
 #nav-section nav .nav-links li .nav-links-4 {
   color: rgb(93, 88, 239);
 }
-#nav-section nav .nav-icon{
-    display: none;
+#nav-section nav .nav-icon {
+  display: none;
 }
+
+/* navbar ends here */
+
+/* banner starts here */
+
+#banner-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#banner-section .banner-area {
+  width: 80.49%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.125rem;
+}
+#banner-section .banner-area .banner-textarea {
+  padding: 122px 0px;
+}
+#banner-section .banner-area .banner-textarea h2,
+#banner-section .banner-area .banner-textarea h2 .h-orange,
+#banner-section .banner-area .banner-textarea h2 .h-blue {
+  font-family: Quicksand;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+#banner-section .banner-area .banner-textarea h2 .h-orange {
+  color: rgb(254, 163, 1);
+}
+#banner-section .banner-area .banner-textarea h2 .h-blue {
+  color: rgb(1, 172, 253);
+}
+#banner-section .banner-area .banner-textarea p {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
+}
+#banner-section .banner-area .banner-textarea .banner-btn {
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  margin-top: 1.25rem;
+}
+
+/* banner ends here */
 
 /* Media query starts here */
 
 /* Responsive for mobile */
-@media screen and (max-width:430px) {
+@media screen and (max-width: 430px) {
+  /* Responsive nav for mobile starts here*/
 
-    /* Responsive nav for mobile starts here*/
+  #nav-section nav .nav-logo h2,
+  #nav-section nav ul,
+  #nav-section nav .nav-button .btn {
+    display: none;
+  }
+  #nav-section {
+    border: 0.5px solid rgb(254, 163, 1);
+  }
+  #nav-section nav {
+    width: 90%;
+  }
+  #nav-section nav .nav-logo img {
+    width: 70%;
+  }
+  #nav-section nav .nav-button .nav-icon {
+    display: inline;
+    font-size: 1.3rem;
+  }
 
-    #nav-section nav .nav-logo h2,
-    #nav-section nav ul,
-    #nav-section nav .nav-button .btn{
-        display: none;
-    }
-    #nav-section{
-        border: 0.5px  solid rgb(254, 163, 1);;
-    }
-    #nav-section nav{
-        width: 90%;
-    }
-    #nav-section nav .nav-logo img{
-        width: 70%;
-    }
-    #nav-section nav .nav-button .nav-icon{
-        display: inline;
-        font-size: 1.30rem;
-    }
+  /* Responsive nav for mobile ends here */
 
-    /* Responsive nav for mobile ends here */
+  /* Responsive banner for mobile starts here */
+
+  #banner-section .banner-area {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+  }
+  #banner-section .banner-area .banner-textarea {
+    text-align: center;
+    padding: 0px;
+  }
+  #banner-section .banner-area .banner-img img {
+    width: 100%;
+  }
+  #banner-section .banner-area .banner-textarea h2,
+  #banner-section .banner-area .banner-textarea h2 .h-orange,
+  #banner-section .banner-area .banner-textarea h2 .h-blue {
+    font-size: 2rem;
+  }
+  #banner-section .banner-area .banner-textarea p {
+    font-size: 0.9rem;
+  }
+
+  /* Responsive banner for mobile ends here */
 }
