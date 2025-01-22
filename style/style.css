@@ -346,17 +346,17 @@ footer {
   font-size: 0.7rem;
   font-weight: 700;
 }
-#stories-section .stories-area .card-area .card-02 .card-story .btn{
-    background-color: rgb(149, 178, 38);
+#stories-section .stories-area .card-area .card-02 .card-story .btn {
+  background-color: rgb(149, 178, 38);
 }
-#stories-section .stories-area .card-area .card-03 .card-story .btn{
-    background-color: rgb(93, 88, 240);
+#stories-section .stories-area .card-area .card-03 .card-story .btn {
+  background-color: rgb(93, 88, 240);
 }
-#stories-section .stories-area .card-area .card-04 .card-story .btn{
-    background-color: rgb(149, 178, 38);
+#stories-section .stories-area .card-area .card-04 .card-story .btn {
+  background-color: rgb(149, 178, 38);
 }
-#stories-section .stories-area .card-area .card-05 .card-story .btn{
-    background-color: rgb(149, 178, 38);
+#stories-section .stories-area .card-area .card-05 .card-story .btn {
+  background-color: rgb(149, 178, 38);
 }
 #stories-section .stories-area .card-area .card-05 .card-story .card-title,
 #stories-section .stories-area .card-area .card-02 .card-story .card-title,
@@ -367,13 +367,89 @@ footer {
   font-size: 0.9rem;
   font-weight: 700;
 }
-#stories-section .stories-area .stories-btn{
-    background-color: rgb(17, 17, 17);
+#stories-section .stories-area .stories-btn {
+  background-color: rgb(17, 17, 17);
 }
 /* Our stories ends here */
 
+/* Footer starts here */
 
-
+#footer-section {
+  width: 100%;
+  background-color: rgb(1, 172, 253);
+  display: flex;
+  justify-content: center;
+}
+#footer-section .footer-area {
+  width: 80.49%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7.5rem;
+  padding: 7.69rem 0rem 10.63rem 0rem;
+}
+#footer-section .footer-area .footer-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column: span 2;
+}
+#footer-section .footer-area .footer-intro .footer-intro-title {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+#footer-section .footer-area .footer-intro .footer-intro-title h2 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+#footer-section .footer-area .footer-intro .footer-intro-description {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+#footer-section .footer-area .about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#footer-section .footer-area .about h2 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#footer-section .footer-area .about nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#footer-section .footer-area .about nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#footer-section .footer-area .keep-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#footer-section .footer-area .keep-area .media-title {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#footer-section .footer-area .keep-area .media-area {
+  display: flex;
+  gap: 0.7rem;
+}
+/* Footer ends here */
 
 /* Media query starts here */
 
@@ -446,32 +522,42 @@ footer {
   /* Responsive standard curriculum for mobile ends here */
 
   /* Responsive our stories for mobile starts here */
-  #stories-section .stories-area{
+  #stories-section .stories-area {
     width: 90%;
     gap: 1.25rem;
     padding: 2.25rem 0rem;
   }
-  #stories-section .stories-area .stories-area-title{
+  #stories-section .stories-area .stories-area-title {
     font-size: 1.5rem;
   }
-  #stories-section .stories-area .card-area .card-01{
+  #stories-section .stories-area .card-area .card-01 {
     display: none;
   }
-  #stories-section .stories-area .card-area{
+  #stories-section .stories-area .card-area {
     grid-template: 1fr 1fr / 1fr 1fr;
-    grid-template-areas: 
-    "card-02 card-03"
-    "card-04 card-05"
-    ;
+    grid-template-areas:
+      "card-02 card-03"
+      "card-04 card-05";
   }
-  #stories-section .stories-area .card-area .card .card-story .btn{
+  #stories-section .stories-area .card-area .card .card-story .btn {
     font-size: 0.49rem;
   }
-  #stories-section .stories-area .card-area .card .card-story .card-title{
+  #stories-section .stories-area .card-area .card .card-story .card-title {
     font-size: 0.6rem;
   }
-  #stories-section .stories-area .stories-btn{
+  #stories-section .stories-area .stories-btn {
     padding: 0.5rem 1.5rem;
   }
+
   /* Responsive our stories for mobile ends here */
+
+  /* Responsive footer for mobile starts here */
+  #footer-section .footer-area {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3.5rem 0rem;
+  }
+  /* Responsive footer for mobile ends here */
 }
